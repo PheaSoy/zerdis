@@ -42,6 +42,8 @@ spring:
     active:
       - dev
 ```
+We need to put the redis configuration like port, host and password if required.Because on the bootstrap both configure-server and configure-client need to fetch the configuration from redis and publish for the configure-server and subscribe for configure-client.
+
 By default configure-server is exposing the `/redis-refresh` endpoint by sending the message `Refresh properties.` to the default topic `spring-redis-propertysource` of redis. if you want to change the default topic. You can set in `.properties` file
 `configure.redis.topic=my-spring-boot-redis-topic`.
 
@@ -58,7 +60,7 @@ public class ConfigureClientApplication {
 	}
  }
 ```
-You also need to add the `boostrap.yaml` in your spring boot application.
+You also need to add the `boostrap.yaml` in your spring boot application. 
 ```
 spring:
   redis:
