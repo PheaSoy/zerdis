@@ -7,3 +7,17 @@ If you have the configure-server who manage the configuration with connected to 
 <img src="https://user-images.githubusercontent.com/16829392/62006692-3d088c00-b16e-11e9-8564-3de740d53af3.png" alt="Architecture" />
 
 ## Quick-start
+
+Adding depedency to your application:
+
+```
+  <dependency>  
+    <groupId>io.zerdis</groupId>
+    <artifactId>zerdis-integration</artifactId>
+    <version>${version}</version>
+  </dependency>
+```
+
+### Configure Server
+
+
