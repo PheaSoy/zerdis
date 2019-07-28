@@ -1,0 +1,9 @@
+spring:
+  redis:
+    port: 6379
+    host: localhost
+  application:
+    name: bootiful
+  profiles:
+    active:
+      - dev

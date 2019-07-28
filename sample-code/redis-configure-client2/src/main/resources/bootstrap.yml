@@ -1,0 +1,9 @@
+spring:
+  redis:
+    port: 6379
+    host: localhost
+  application:
+    name: redis-configure-client2
+  profiles:
+    active:
+      - dev
