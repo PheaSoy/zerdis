@@ -73,3 +73,6 @@ spring:
       - dev
 ```
 For the queue **topic** is the same `Configure Server`. If you want like to change the topic name fo Configure Server or Configure Client they are pair and must be the same.
+
+More understand you can download the project [sample-code](https://github.com/PheaSoy/zerdis/tree/master/sample-code).
+We're welcome you to contribute more features like UI authentication, history,etc.
