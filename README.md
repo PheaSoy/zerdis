@@ -48,8 +48,8 @@ By default configure-server is exposing the `/redis-refresh` endpoint. It's send
 `configure.redis.topic=my-spring-boot-redis-topic`.
 
 
-### Configure Client
-Like Configure Server, you just `@EnableRedisConfigureClient` to your spring boot application.
+### configure-client
+Like configure-server, you just `@EnableRedisConfigureClient` to your spring boot application.
 ```
 @SpringBootApplication
 @EnableRedisConfigureClient
@@ -72,7 +72,7 @@ spring:
     active:
       - dev
 ```
-For the queue **topic** is the same `Configure Server`. If you want to change the topic name fo Configure Server or Configure Client they are pair and must be the same.
+For the queue **topic** is the same `configure-server`. If you want to change the topic name fo configure-server or configure-client they are pair and must be the same.
 
 More understand you can download the project [sample-code](https://github.com/PheaSoy/zerdis/tree/master/sample-code).
 We're welcome you to contribute more features like UI authentication, history,etc.
