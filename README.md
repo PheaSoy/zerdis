@@ -44,7 +44,7 @@ spring:
 ```
 We need to put the redis configuration like port, host and password if required.Because on the bootstrap both configure-server and configure-client need to fetch the configuration from redis and publish for the configure-server and subscribe for configure-client.
 
-By default configure-server is exposing the `/redis-refresh` endpoint by sending the message `Refresh properties.` to the default topic `spring-redis-propertysource` of redis. if you want to change the default topic. You can set in `.properties` file
+By default configure-server is exposing the `/redis-refresh` endpoint. It's sending the message `Refresh properties.` to the default topic `spring-redis-propertysource`. if you want to change the default topic. You can set in `.properties` file
 `configure.redis.topic=my-spring-boot-redis-topic`.
 
 
@@ -72,7 +72,7 @@ spring:
     active:
       - dev
 ```
-For the queue **topic** is the same `Configure Server`. If you want like to change the topic name fo Configure Server or Configure Client they are pair and must be the same.
+For the queue **topic** is the same `Configure Server`. If you want to change the topic name fo Configure Server or Configure Client they are pair and must be the same.
 
 More understand you can download the project [sample-code](https://github.com/PheaSoy/zerdis/tree/master/sample-code).
 We're welcome you to contribute more features like UI authentication, history,etc.
