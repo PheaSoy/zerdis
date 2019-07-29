@@ -18,7 +18,7 @@ Adding depedency to your application:
   </dependency>
 ```
 
-### Configure Server
+### configure-server
 Adding `@EnableRedisConfigureServer` to your application.
 ```
 @SpringBootApplication
