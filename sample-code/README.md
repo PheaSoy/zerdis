@@ -1,5 +1,5 @@
 # sample-code
-
+This is an example how you can work with zerdis.
 ### Quick start
 
 Store your configuration in redis following format:
@@ -80,4 +80,5 @@ Hello World from configure client1 updated {6}
 ```
 So you see now the value has changed from {5} -> {6}. 
 
+Please read more [zerdis](https://github.com/PheaSoy/zerdis and feel free to contribute. We need a lot use cases on UI.
 
